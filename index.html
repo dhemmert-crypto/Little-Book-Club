@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +7,220 @@
 <title>Little Book Club</title>
 
 <style>
-body{
-    font-family: Georgia, serif;
-    background:#fff8f2;
-    text-align:center;
-    padding:40px;
+
+:root{
+  --roz:#f8d9df;
+  --crem:#fff8f2;
+  --alb:#ffffff;
+  --bordo:#7a3045;
+  --text:#4d3c3c;
 }
 
-h1{
-    color:#7a3045;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
+
+body{
+  font-family:Georgia,serif;
+  background:var(--crem);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,var(--roz),#ffffff);
+  text-align:center;
+  padding:60px 20px;
+  border-bottom:4px solid var(--bordo);
+}
+
+header h1{
+  color:var(--bordo);
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:1.1rem;
+}
+
+nav{
+  background:white;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+  color:var(--bordo);
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 10px;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2{
+  color:var(--bordo);
+  margin-bottom:15px;
+}
+
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:8px;
+}
+
+.footer{
+  text-align:center;
+  padding:40px;
+  color:var(--bordo);
+}
+
+.decor{
+  font-size:1.6rem;
+  margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+  header h1{
+    font-size:2rem;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+}
+
 </style>
 
 </head>
-
 <body>
 
-<h1>📚 Little Book Club</h1>
+<header>
 
-<p>Bine ai venit!</p>
+<div class="decor">
+📚 🌸 🎀 🤍 🌷
+</div>
+
+<h1>Little Book Club</h1>
+
+<p>
+Locul nostru special pentru cărți, povești și prietenie.
+</p>
+
+</header>
+
+<nav>
+#acasaAcasă</a>
+#cartea-luniiCartea lunii</a>
+#de-cititVrem să citim</a>
+#cititeAm citit</a>
+</nav>
+
+<div class="container">
+
+<section id="acasa">
+
+<div class="card">
+
+<h2>🌷 Bun venit</h2>
+
+<p>
+Bine ai venit în Little Book Club!
+Acesta este locul unde împărtășim recomandări,
+descoperim cărți noi și păstrăm cele mai frumoase amintiri ale lecturilor noastre.
+</p>
+
+</div>
+
+</section>
+
+<section id="cartea-lunii">
+
+<div class="card">
+
+<h2>📖 Cartea lunii</h2>
+
+<p>
+Momentan alegem următoarea lectură a clubului.
+</p>
+
+</div>
+
+</section>
+
+<section id="de-citit">
+
+<div class="card">
+
+<h2>📚 Cărți pe care vrem să le citim</h2>
+
+<ul>
+<li>Mândrie și prejudecată</li>
+<li>Jane Eyre</li>
+<li>Mica librărie de pe Sena</li>
+<li>Femei care aleargă cu lupii</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="citite">
+
+<div class="card">
+
+<h2>❤️ Cărți pe care le-am citit</h2>
+
+<ul>
+<li>Micul Prinț ⭐⭐⭐⭐⭐</li>
+<li>Alchimistul ⭐⭐⭐⭐⭐</li>
+<li>Femeiușca ⭐⭐⭐⭐</li>
+</ul>
+
+</div>
+
+</section>
+
+<div class="card">
+
+<h2>📝 Recenzia preferată</h2>
+
+<p>
+„O carte minunată care ne-a făcut să discutăm ore întregi și să vedem povestea din perspective diferite.”
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🌸 Little Book Club • Creat cu drag pentru iubitoarele de cărți 📚
+
+</div>
 
 </body>
-
 </html>
+
 
