@@ -343,6 +343,42 @@ function adaugaCarte() {
 }
 
 </script>
+<script>
+
+function adaugaCarte(){
+
+  const titlu =
+  document.querySelectorAll("input")[0].value;
+
+  const autor =
+  document.querySelectorAll("input")[1].value;
+
+  const recomandata =
+  document.querySelectorAll("input")[2].value;
+
+  if(titlu === ""){
+    return;
+  }
+
+  const lista =
+  document.querySelector("#de-citit ul");
+
+  const carte =
+  document.createElement("li");
+
+  carte.textContent =
+  titlu +
+  " - " +
+  autor +
+  " (recomandată de " +
+  recomandata +
+  ")";
+
+  lista.appendChild(carte);
+
+}
+
+</script>
 
 </body>
 </html>
