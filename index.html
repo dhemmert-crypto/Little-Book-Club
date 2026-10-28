@@ -303,6 +303,43 @@ Adaugă carte
 🌸 Little Book Club • Cu drag pentru toate iubitoarele de cărți 📚
 
 </footer>
+<script>
+
+function adaugaCarte() {
+
+ const titlu =
+ document.querySelectorAll("input")[0].value;
+
+ const autor =
+ document.querySelectorAll("input")[1].value;
+
+ const recomandata =
+ document.querySelectorAll("input")[2].value;
+
+ if(titlu === ""){
+   return;
+ }
+
+ const lista =
+ document.querySelector("#de-citit ul");
+
+ const carte =
+ document.createElement("li");
+
+ carte.innerHTML =
+ titlu + " - " + autor +
+ " (recomandată de " +
+ recomandata + ")";
+
+ lista.appendChild(carte);
+
+ document.querySelectorAll("input")[0].value="";
+ document.querySelectorAll("input")[1].value="";
+ document.querySelectorAll("input")[2].value="";
+
+}
+
+</script>
 
 </body>
 </html>
