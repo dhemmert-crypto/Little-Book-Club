@@ -1,1 +1,299 @@
 index-v2.html
+<!DOCTYPE html>
+
+
+
+
+
+Little Book Club V2
+
+
+
+:root{
+--roz:#f7dde3;
+--crem:#fff9f5;
+--alb:#ffffff;
+--bordo:#7a3045;
+--text:#574646;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia, serif;
+background:var(--crem);
+color:var(--text);
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#f7dde3,#fff);
+padding:60px 20px;
+text-align:center;
+border-bottom:4px solid var(--bordo);
+}
+
+header h1{
+font-size:3rem;
+color:var(--bordo);
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+color:var(--bordo);
+font-weight:bold;
+margin:10px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.06);
+}
+
+h2{
+color:var(--bordo);
+margin-bottom:15px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+button{
+background:var(--bordo);
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+ul{
+padding-left:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:var(--bordo);
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+nav a{
+display:block;
+margin:8px 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+📚 Little Book Club
+
+🌸 Cărți, prietenie și recenzii
+
+
+
+
+
+Acasă
+
+Cartea lunii
+
+De citit
+
+Citite
+
+
+
+
+
+
+
+👤 Contul meu
+
+
+
+
+
+Autentificare
+
+Creează cont
+
+
+
+
+
+
+
+🌷 Bun venit
+
+
+Bine ai venit în Little Book Club!
+
+
+
+
+
+
+
+
+
+
+📖 Cartea lunii
+
+Momentan alegem următoarea lectură.
+
+
+
+
+
+👭 Membrele clubului
+
+
+Diana
+Maria
+Ioana
+Elena
+
+
+
+
+
+
+
+
+
+
+📚 Adaugă o carte
+
+
+
+
+
+
+
+
+Adaugă carte
+
+
+
+
+
+
+📚 Cărți pe care vrem să le citim
+
+
+
+Mândrie și prejudecată
+
+Jane Eyre
+
+
+
+
+
+
+
+
+
+
+
+❤️ Cărți citite
+
+
+Micul Prinț ⭐⭐⭐⭐⭐
+Alchimistul ⭐⭐⭐⭐⭐
+
+
+
+
+
+
+📝 Recenzia preferată
+
+
+„O carte minunată care ne-a făcut să discutăm ore întregi.”
+
+
+
+
+
+
+
+
+
+
+🌸 Little Book Club 📚
+
+
+
+
+
+function adaugaCarte(){
+
+const titlu =
+document.getElementById("titlu").value;
+
+const autor =
+document.getElementById("autor").value;
+
+const recomandata =
+document.getElementById("recomandata").value;
+
+if(titlu === ""){
+return;
+}
+
+const lista =
+document.getElementById("listaCarti");
+
+const li =
+document.createElement("li");
+
+li.textContent =
+titlu +
+" - " +
+autor +
+" (recomandată de " +
