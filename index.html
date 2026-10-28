@@ -9,117 +9,127 @@
 <style>
 
 :root{
-  --roz:#f8d9df;
-  --crem:#fff8f2;
-  --alb:#ffffff;
-  --bordo:#7a3045;
-  --text:#4d3c3c;
+--roz:#f8d9df;
+--crem:#fff8f2;
+--alb:#ffffff;
+--bordo:#7a3045;
+--text:#4d3c3c;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:Georgia,serif;
-  background:var(--crem);
-  color:var(--text);
-  line-height:1.6;
+font-family:Georgia,serif;
+background:var(--crem);
+color:var(--text);
+line-height:1.6;
 }
 
 header{
-  background:linear-gradient(135deg,var(--roz),#ffffff);
-  text-align:center;
-  padding:60px 20px;
-  border-bottom:4px solid var(--bordo);
+background:linear-gradient(135deg,#f8d9df,#ffffff);
+padding:70px 20px;
+text-align:center;
+border-bottom:4px solid var(--bordo);
 }
 
 header h1{
-  color:var(--bordo);
-  font-size:3rem;
-  margin-bottom:10px;
+font-size:3rem;
+color:var(--bordo);
+margin-bottom:10px;
 }
 
 header p{
-  font-size:1.1rem;
-}
-
-nav{
-  background:white;
-  padding:15px;
-  text-align:center;
-  box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-nav a{
-  color:var(--bordo);
-  text-decoration:none;
-  font-weight:bold;
-  margin:0 10px;
+font-size:1.1rem;
 }
 
 .container{
-  max-width:1000px;
-  margin:auto;
-  padding:25px;
+max-width:1000px;
+margin:auto;
+padding:25px;
 }
 
 .card{
-  background:white;
-  padding:25px;
-  border-radius:20px;
-  margin-bottom:20px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+background:white;
+padding:25px;
+border-radius:25px;
+margin-bottom:25px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 h2{
-  color:var(--bordo);
-  margin-bottom:15px;
+color:var(--bordo);
+margin-bottom:15px;
 }
 
-ul{
-  padding-left:20px;
+.menu{
+background:white;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-li{
-  margin-bottom:8px;
-}
-
-.footer{
-  text-align:center;
-  padding:40px;
-  color:var(--bordo);
+.menu a{
+color:var(--bordo);
+text-decoration:none;
+font-weight:bold;
+padding:10px;
+display:inline-block;
 }
 
 .decor{
-  font-size:1.6rem;
-  margin-bottom:10px;
+font-size:1.6rem;
+margin-bottom:10px;
+}
+
+.card-luna{
+background:linear-gradient(
+135deg,
+#fff,
+#ffeef2
+);
+}
+
+.card-luna h2{
+font-size:2rem;
+}
+
+.card-luna p{
+font-size:1.1rem;
+}
+
+.footer{
+padding:40px;
+text-align:center;
+color:var(--bordo);
 }
 
 @media(max-width:768px){
 
-  header h1{
-    font-size:2rem;
-  }
+header h1{
+font-size:2rem;
+}
 
-  nav a{
-    display:block;
-    margin:10px 0;
-  }
+.menu a{
+display:block;
+}
 
 }
 
 </style>
-
 </head>
+
 <body>
 
 <header>
 
 <div class="decor">
-📚 🌸 🎀 🤍 🌷
+📚 🌷 🎀 🤍 🌸
 </div>
 
 <h1>Little Book Club</h1>
@@ -130,12 +140,17 @@ Locul nostru special pentru cărți, povești și prietenie.
 
 </header>
 
-<nav>
+<div class="menu">
+
 #acasaAcasă</a>
+
 #cartea-luniiCartea lunii</a>
-#de-cititVrem să citim</a>
-#cititeAm citit</a>
-</nav>
+
+#de-cititDe citit</a>
+
+#cititeCitite</a>
+
+</div>
 
 <div class="container">
 
@@ -143,12 +158,12 @@ Locul nostru special pentru cărți, povești și prietenie.
 
 <div class="card">
 
-<h2>🌷 Bun venit</h2>
+<h2>🌸 Bun venit</h2>
 
 <p>
 Bine ai venit în Little Book Club!
-Acesta este locul unde împărtășim recomandări,
-descoperim cărți noi și păstrăm cele mai frumoase amintiri ale lecturilor noastre.
+Aici vom păstra toate recomandările,
+lecturile preferate și recenziile noastre.
 </p>
 
 </div>
@@ -157,12 +172,16 @@ descoperim cărți noi și păstrăm cele mai frumoase amintiri ale lecturilor n
 
 <section id="cartea-lunii">
 
-<div class="card">
+<div class="card card-luna">
 
 <h2>📖 Cartea lunii</h2>
 
 <p>
-Momentan alegem următoarea lectură a clubului.
+Încă nu a fost aleasă.
+</p>
+
+<p>
+În curând vom putea schimba această carte direct din site.
 </p>
 
 </div>
@@ -202,25 +221,16 @@ Momentan alegem următoarea lectură a clubului.
 
 </section>
 
-<div class="card">
-
-<h2>📝 Recenzia preferată</h2>
-
-<p>
-„O carte minunată care ne-a făcut să discutăm ore întregi și să vedem povestea din perspective diferite.”
-</p>
-
-</div>
-
 </div>
 
 <div class="footer">
 
-🌸 Little Book Club • Creat cu drag pentru iubitoarele de cărți 📚
+🌷 Little Book Club 🌷
 
 </div>
 
 </body>
 </html>
+
 
 
